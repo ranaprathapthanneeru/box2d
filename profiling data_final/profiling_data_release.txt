@@ -1,0 +1,399 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 17.90      0.46     0.46                             b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&)
+ 11.28      0.75     0.29                             b2ContactSolver::SolveVelocityConstraints()
+  8.17      0.96     0.21  1869550     0.11     0.11  debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)
+  5.84      1.11     0.15                             b2World::DrawDebugData()
+  5.06      1.24     0.13                             void b2DynamicTree::Query<b2BroadPhase>(b2BroadPhase*, b2AABB const&) const
+  4.47      1.36     0.12                             b2RevoluteJoint::SolveVelocityConstraints(b2SolverData const&)
+  3.89      1.46     0.10                             void std::__introsort_loop<b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.18]
+  3.11      1.54     0.08                             b2DynamicTree::InsertLeaf(int)
+  3.11      1.62     0.08                             b2ContactManager::Collide()
+  2.72      1.69     0.07                             b2CollideEdgeAndPolygon(b2Manifold*, b2EdgeShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&)
+  2.72      1.76     0.07                             b2World::Solve(b2TimeStep const&)
+  2.72      1.83     0.07                             b2RevoluteJoint::SolvePositionConstraints(b2SolverData const&)
+  2.33      1.89     0.06                             b2ContactSolver::SolvePositionConstraints()
+  2.33      1.95     0.06                             b2Mat33::Solve22(b2Vec2 const&) const
+  1.95      2.00     0.05                             void b2BroadPhase::UpdatePairs<b2ContactManager>(b2ContactManager*)
+  1.56      2.04     0.04                             b2Distance(b2DistanceOutput*, b2SimplexCache*, b2DistanceInput const*)
+  1.56      2.08     0.04                             b2ContactManager::AddPair(void*, void*)
+  1.56      2.12     0.04                             b2Contact::Update(b2ContactListener*)
+  1.17      2.15     0.03                             debug_draw_t::DrawTransform(b2Transform const&)
+  1.17      2.18     0.03    59075     0.51     0.51  debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)
+  1.17      2.21     0.03                             b2World::DrawJoint(b2Joint*)
+  1.17      2.24     0.03                             b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool)
+  0.97      2.26     0.03                             b2RevoluteJoint::InitVelocityConstraints(b2SolverData const&)
+  0.78      2.28     0.02                             b2CollidePolygons(b2Manifold*, b2PolygonShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&)
+  0.78      2.30     0.02                             b2ClipSegmentToLine(b2ClipVertex*, b2ClipVertex const*, b2Vec2 const&, float, int)
+  0.78      2.32     0.02                             b2DynamicTree::Balance(int)
+  0.78      2.34     0.02                             b2ContactSolver::b2ContactSolver(b2ContactSolverDef*)
+  0.78      2.36     0.02                             b2WorldManifold::Initialize(b2Manifold const*, b2Transform const&, float, b2Transform const&, float)
+  0.78      2.38     0.02                             b2World::Step(float, int, int)
+  0.78      2.40     0.02                             b2World::SolveTOI(b2TimeStep const&)
+  0.78      2.42     0.02                             b2PolygonShape::ComputeAABB(b2AABB*, b2Transform const&, int) const
+  0.39      2.43     0.01   378775     0.03     0.03  debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)
+  0.39      2.44     0.01                             b2TimeOfImpact(b2TOIOutput*, b2TOIInput const*)
+  0.39      2.45     0.01                             b2BroadPhase::QueryCallback(int)
+  0.39      2.46     0.01                             b2DynamicTree::RemoveLeaf(int)
+  0.39      2.47     0.01                             b2PulleyJoint::SolvePositionConstraints(b2SolverData const&)
+  0.39      2.48     0.01                             b2ContactSolver::StoreImpulses()
+  0.39      2.49     0.01                             b2ContactSolver::InitializeVelocityConstraints()
+  0.39      2.50     0.01                             b2StackAllocator::~b2StackAllocator()
+  0.39      2.51     0.01                             b2Body::SetMassData(b2MassData const*)
+  0.39      2.52     0.01                             b2World::ClearForces()
+  0.39      2.53     0.01                             b2Fixture::Synchronize(b2BroadPhase*, b2Transform const&, b2Transform const&)
+  0.39      2.54     0.01                             b2RevoluteJoint::GetAnchorA() const
+  0.39      2.55     0.01                             void std::__insertion_sort<b2Pair*, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.29]
+  0.19      2.56     0.01     4026     1.24     1.24  b2ContactListener::BeginContact(b2Contact*)
+  0.19      2.56     0.01                             b2ContactListener::~b2ContactListener()
+  0.19      2.57     0.01                             b2Contact::Create(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*)
+  0.19      2.57     0.01                             b2Contact::AddType(b2Contact* (*)(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*), void (*)(b2Contact*, b2BlockAllocator*), b2Shape::Type, b2Shape::Type)
+  0.00      2.57     0.00   135731     0.00     0.00  b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)
+  0.00      2.57     0.00   135727     0.00     0.00  b2ContactListener::PreSolve(b2Contact*, b2Manifold const*)
+  0.00      2.57     0.00     3932     0.00     0.00  b2ContactListener::EndContact(b2Contact*)
+  0.00      2.57     0.00     3475     0.00     0.00  debug_draw_t::DrawString(int, int, char const*, ...)
+  0.00      2.57     0.00     3475     0.00     0.00  cs251::base_sim_t::draw_title(int, int, char const*)
+  0.00      2.57     0.00     3475     0.00     0.00  cs251::base_sim_t::step(cs251::settings_t*)
+  0.00      2.57     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN5cs25110test_indexE
+  0.00      2.57     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN5cs2519dominos_tC2Ev
+  0.00      2.57     0.00        1     0.00     0.00  cs251::base_sim_t::base_sim_t()
+  0.00      2.57     0.00        1     0.00     0.00  cs251::dominos_t::dominos_t()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.39% of 2.57 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     27.2    0.46    0.24                 b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [1]
+                0.21    0.00 1869550/1869550     debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [3]
+                0.03    0.00   59075/59075       debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [21]
+                0.00    0.00    3475/378775      debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     11.3    0.29    0.00                 b2ContactSolver::SolveVelocityConstraints() [2]
+-----------------------------------------------
+                0.21    0.00 1869550/1869550     b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [1]
+[3]      8.2    0.21    0.00 1869550         debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [3]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]      5.8    0.15    0.00                 b2World::DrawDebugData() [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      5.1    0.13    0.00                 void b2DynamicTree::Query<b2BroadPhase>(b2BroadPhase*, b2AABB const&) const [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      4.5    0.12    0.00                 b2RevoluteJoint::SolveVelocityConstraints(b2SolverData const&) [6]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      3.9    0.10    0.00                 void std::__introsort_loop<b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.18] [7]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      3.1    0.08    0.00                 b2DynamicTree::InsertLeaf(int) [8]
+-----------------------------------------------
+                                                 <spontaneous>
+[9]      3.1    0.08    0.00                 b2ContactManager::Collide() [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     2.7    0.07    0.00                 b2CollideEdgeAndPolygon(b2Manifold*, b2EdgeShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&) [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     2.7    0.07    0.00                 b2World::Solve(b2TimeStep const&) [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     2.7    0.07    0.00                 b2RevoluteJoint::SolvePositionConstraints(b2SolverData const&) [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     2.3    0.06    0.00                 b2ContactSolver::SolvePositionConstraints() [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     2.3    0.06    0.00                 b2Mat33::Solve22(b2Vec2 const&) const [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     1.9    0.05    0.00                 void b2BroadPhase::UpdatePairs<b2ContactManager>(b2ContactManager*) [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     1.8    0.04    0.01                 b2Contact::Update(b2ContactListener*) [16]
+                0.01    0.00    4026/4026        b2ContactListener::BeginContact(b2Contact*) [45]
+                0.00    0.00  135727/135727      b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [57]
+                0.00    0.00    3932/3932        b2ContactListener::EndContact(b2Contact*) [58]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     1.6    0.04    0.00                 b2Distance(b2DistanceOutput*, b2SimplexCache*, b2DistanceInput const*) [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     1.6    0.04    0.00                 b2ContactManager::AddPair(void*, void*) [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     1.6    0.03    0.01                 b2World::DrawJoint(b2Joint*) [19]
+                0.01    0.00  375300/378775      debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     1.2    0.03    0.00                 debug_draw_t::DrawTransform(b2Transform const&) [20]
+-----------------------------------------------
+                0.03    0.00   59075/59075       b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [1]
+[21]     1.2    0.03    0.00   59075         debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     1.2    0.03    0.00                 b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool) [22]
+                0.00    0.00  135681/135731      b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[23]     1.0    0.03    0.00                 b2RevoluteJoint::InitVelocityConstraints(b2SolverData const&) [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     0.8    0.02    0.00                 b2CollidePolygons(b2Manifold*, b2PolygonShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&) [24]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.8    0.02    0.00                 b2ClipSegmentToLine(b2ClipVertex*, b2ClipVertex const*, b2Vec2 const&, float, int) [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     0.8    0.02    0.00                 b2DynamicTree::Balance(int) [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     0.8    0.02    0.00                 b2ContactSolver::b2ContactSolver(b2ContactSolverDef*) [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.8    0.02    0.00                 b2WorldManifold::Initialize(b2Manifold const*, b2Transform const&, float, b2Transform const&, float) [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.8    0.02    0.00                 b2World::Step(float, int, int) [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     0.8    0.02    0.00                 b2World::SolveTOI(b2TimeStep const&) [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     0.8    0.02    0.00                 b2PolygonShape::ComputeAABB(b2AABB*, b2Transform const&, int) const [31]
+-----------------------------------------------
+                0.00    0.00    3475/378775      b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [1]
+                0.01    0.00  375300/378775      b2World::DrawJoint(b2Joint*) [19]
+[32]     0.4    0.01    0.00  378775         debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.4    0.01    0.00                 b2TimeOfImpact(b2TOIOutput*, b2TOIInput const*) [33]
+-----------------------------------------------
+                                                 <spontaneous>
+[34]     0.4    0.01    0.00                 b2BroadPhase::QueryCallback(int) [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[35]     0.4    0.01    0.00                 b2DynamicTree::RemoveLeaf(int) [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.4    0.01    0.00                 b2PulleyJoint::SolvePositionConstraints(b2SolverData const&) [36]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.4    0.01    0.00                 b2ContactSolver::StoreImpulses() [37]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.4    0.01    0.00                 b2ContactSolver::InitializeVelocityConstraints() [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.4    0.01    0.00                 b2StackAllocator::~b2StackAllocator() [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[40]     0.4    0.01    0.00                 b2Body::SetMassData(b2MassData const*) [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[41]     0.4    0.01    0.00                 b2World::ClearForces() [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.4    0.01    0.00                 b2Fixture::Synchronize(b2BroadPhase*, b2Transform const&, b2Transform const&) [42]
+-----------------------------------------------
+                                                 <spontaneous>
+[43]     0.4    0.01    0.00                 b2RevoluteJoint::GetAnchorA() const [43]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.4    0.01    0.00                 void std::__insertion_sort<b2Pair*, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.29] [44]
+-----------------------------------------------
+                0.01    0.00    4026/4026        b2Contact::Update(b2ContactListener*) [16]
+[45]     0.2    0.01    0.00    4026         b2ContactListener::BeginContact(b2Contact*) [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.2    0.01    0.00                 b2ContactListener::~b2ContactListener() [46]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.2    0.01    0.00                 b2Contact::Create(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*) [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.2    0.01    0.00                 b2Contact::AddType(b2Contact* (*)(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*), void (*)(b2Contact*, b2BlockAllocator*), b2Shape::Type, b2Shape::Type) [48]
+-----------------------------------------------
+                0.00    0.00      50/135731      b2Island::SolveTOI(b2TimeStep const&, int, int) [359]
+                0.00    0.00  135681/135731      b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool) [22]
+[56]     0.0    0.00    0.00  135731         b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [56]
+-----------------------------------------------
+                0.00    0.00  135727/135727      b2Contact::Update(b2ContactListener*) [16]
+[57]     0.0    0.00    0.00  135727         b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [57]
+-----------------------------------------------
+                0.00    0.00    3932/3932        b2Contact::Update(b2ContactListener*) [16]
+[58]     0.0    0.00    0.00    3932         b2ContactListener::EndContact(b2Contact*) [58]
+-----------------------------------------------
+                0.00    0.00    3475/3475        cs251::callbacks_t::display_cb() [300]
+[59]     0.0    0.00    0.00    3475         debug_draw_t::DrawString(int, int, char const*, ...) [59]
+-----------------------------------------------
+                0.00    0.00    3475/3475        cs251::callbacks_t::display_cb() [300]
+[60]     0.0    0.00    0.00    3475         cs251::base_sim_t::draw_title(int, int, char const*) [60]
+-----------------------------------------------
+                0.00    0.00    3475/3475        cs251::callbacks_t::display_cb() [300]
+[61]     0.0    0.00    0.00    3475         cs251::base_sim_t::step(cs251::settings_t*) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [516]
+[62]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN5cs25110test_indexE [62]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [516]
+[63]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN5cs2519dominos_tC2Ev [63]
+-----------------------------------------------
+                0.00    0.00       1/1           cs251::dominos_t::dominos_t() [65]
+[64]     0.0    0.00    0.00       1         cs251::base_sim_t::base_sim_t() [64]
+-----------------------------------------------
+                0.00    0.00       1/1           cs251::dominos_t::create() [313]
+[65]     0.0    0.00    0.00       1         cs251::dominos_t::dominos_t() [65]
+                0.00    0.00       1/1           cs251::base_sim_t::base_sim_t() [64]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [62] _GLOBAL__sub_I__ZN5cs25110test_indexE [2] b2ContactSolver::SolveVelocityConstraints() [41] b2World::ClearForces()
+  [63] _GLOBAL__sub_I__ZN5cs2519dominos_tC2Ev [38] b2ContactSolver::InitializeVelocityConstraints() [4] b2World::DrawDebugData()
+  [17] b2Distance(b2DistanceOutput*, b2SimplexCache*, b2DistanceInput const*) [27] b2ContactSolver::b2ContactSolver(b2ContactSolverDef*) [29] b2World::Step(float, int, int)
+  [33] b2TimeOfImpact(b2TOIOutput*, b2TOIInput const*) [23] b2RevoluteJoint::InitVelocityConstraints(b2SolverData const&) [11] b2World::Solve(b2TimeStep const&)
+  [24] b2CollidePolygons(b2Manifold*, b2PolygonShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&) [12] b2RevoluteJoint::SolvePositionConstraints(b2SolverData const&) [30] b2World::SolveTOI(b2TimeStep const&)
+  [25] b2ClipSegmentToLine(b2ClipVertex*, b2ClipVertex const*, b2Vec2 const&, float, int) [6] b2RevoluteJoint::SolveVelocityConstraints(b2SolverData const&) [19] b2World::DrawJoint(b2Joint*)
+  [10] b2CollideEdgeAndPolygon(b2Manifold*, b2EdgeShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&) [28] b2WorldManifold::Initialize(b2Manifold const*, b2Transform const&, float, b2Transform const&, float) [1] b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&)
+  [15] void b2BroadPhase::UpdatePairs<b2ContactManager>(b2ContactManager*) [18] b2ContactManager::AddPair(void*, void*) [22] b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool)
+  [34] b2BroadPhase::QueryCallback(int) [9] b2ContactManager::Collide() [47] b2Contact::Create(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*)
+  [59] debug_draw_t::DrawString(int, int, char const*, ...) [39] b2StackAllocator::~b2StackAllocator() [16] b2Contact::Update(b2ContactListener*)
+  [32] debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [58] b2ContactListener::EndContact(b2Contact*) [48] b2Contact::AddType(b2Contact* (*)(b2Fixture*, int, b2Fixture*, int, b2BlockAllocator*), void (*)(b2Contact*, b2BlockAllocator*), b2Shape::Type, b2Shape::Type)
+  [20] debug_draw_t::DrawTransform(b2Transform const&) [45] b2ContactListener::BeginContact(b2Contact*) [42] b2Fixture::Synchronize(b2BroadPhase*, b2Transform const&, b2Transform const&)
+  [21] debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [57] b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [5] void b2DynamicTree::Query<b2BroadPhase>(b2BroadPhase*, b2AABB const&) const
+   [3] debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [56] b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [31] b2PolygonShape::ComputeAABB(b2AABB*, b2Transform const&, int) const
+   [8] b2DynamicTree::InsertLeaf(int) [46] b2ContactListener::~b2ContactListener() [43] b2RevoluteJoint::GetAnchorA() const
+  [35] b2DynamicTree::RemoveLeaf(int) [60] cs251::base_sim_t::draw_title(int, int, char const*) [14] b2Mat33::Solve22(b2Vec2 const&) const
+  [26] b2DynamicTree::Balance(int) [61] cs251::base_sim_t::step(cs251::settings_t*) [44] void std::__insertion_sort<b2Pair*, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.29]
+  [36] b2PulleyJoint::SolvePositionConstraints(b2SolverData const&) [64] cs251::base_sim_t::base_sim_t() [7] void std::__introsort_loop<b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, b2Pair*, long, bool (*)(b2Pair const&, b2Pair const&)) [clone .constprop.18]
+  [37] b2ContactSolver::StoreImpulses() [65] cs251::dominos_t::dominos_t()
+  [13] b2ContactSolver::SolvePositionConstraints() [40] b2Body::SetMassData(b2MassData const*)
